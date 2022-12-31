@@ -23,7 +23,7 @@ class App extends React.Component {
             {
               this.state.items.map(i => {
                 return (
-                  <Item name={i.name} price={i.price} />
+                  <Item key={i.id} name={i.name} price={i.price} />
                 )
               })
             }
@@ -37,6 +37,7 @@ export default App
 
 # description
 - <state> is the data of the component, and we can access it using <this.state> inside the <render()> method
+- key={i.id} is required for every loop
 - component will be changed when the state changed
 
 
