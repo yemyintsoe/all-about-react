@@ -30,7 +30,7 @@ class App extends React.Component {
             {
               this.state.items.map(i => {
                 return (
-                  <Item name={i.name} price={i.price} />
+                  <Item key={i.id} name={i.name} price={i.price} />
                 )
               })
             }
