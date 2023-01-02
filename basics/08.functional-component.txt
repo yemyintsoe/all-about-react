@@ -19,4 +19,7 @@ const Header = props => {
 // or
 const Header = props => ( <div>{{ props.name }}</div> )
 
+// or
+const Header = ({name}) =>  ( <div>{{ name }}</div> )       // here, we use destructure for the props
+
 export default Header;
