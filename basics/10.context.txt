@@ -55,3 +55,6 @@ const Title = props => {
 const title = React.useContext(MyContext)
   return (<h1>{title}</h1>)
 }
+
+# description
+- we <Context> to pass and get the data from anywhere...that mean the passed data can skip the component level
