@@ -43,6 +43,6 @@ class App extends React.Component {
 
 export default App
 
-# description
-- when we click on the button the state will be modified and the component too...
-- we cannot do something like this...<button onClick={this.add()}>, bcuz <()> is not required is JSX
+// # description
+// - when we click on the button the state will be modified and the component too...
+// - we cannot do something like this...<button onClick={this.add()}>, bcuz <()> is not required is JSX
