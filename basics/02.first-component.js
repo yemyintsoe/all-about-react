@@ -1,4 +1,4 @@
-# here is the very basic components
+// here is the very basic components
 
 // App.js
 
@@ -17,6 +17,6 @@ class App extends React.Component {
 
 export default App
 
-## 2 steps to create a component
+// 2 steps to create a component
 1. there must be a <class> that extends <React.Component>
 2. there must be a <render()> method inside the class with a <return> keyword that return an element
