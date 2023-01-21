@@ -1,6 +1,6 @@
 const Header = <div><h1>Hello World</h1></div>
 
-# functional component
+// # functional component
 // or
 import React from 'react'
 function Header(props) {
