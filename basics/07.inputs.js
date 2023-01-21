@@ -1,16 +1,16 @@
-# define a name for an input
+// # define a name for an input
 nameRef = React.createRef()
 
-# use already defined name
+// # use already defined name
 <input ref={this.nameRef} />
 
-# get the input value
+// # get the input value
 let name = this.nameRef.current.value
 
 
-# ======================================
+// # ======================================
 
-# example
+// # example
 
 import React from "react";
 
