@@ -35,9 +35,9 @@ class App extends React.Component {
 
 export default App
 
-# description
-- <state> is the data of the component, and we can access it using <this.state> inside the <render()> method
-- key={i.id} is required for every loop
-- component will be changed when the state changed
+// description
+// - <state> is the data of the component, and we can access it using <this.state> inside the <render()> method
+// - key={i.id} is required for every loop
+// - component will be changed when the state changed
 
 
