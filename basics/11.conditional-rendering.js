@@ -25,5 +25,5 @@ const Greeting = () => {
 
 
 
-# description
-- we cannot write any condition, inside the JSX
+// # description
+// - we cannot write any condition, inside the JSX
