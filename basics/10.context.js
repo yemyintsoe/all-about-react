@@ -1,7 +1,7 @@
-# without Context
+// # without Context
 
--the following are the steps that we can pass the data with using <Context>
--without <Context>, we can't skip the step
+// -the following are the steps that we can pass the data with using <Context>
+// -without <Context>, we can't skip the step
 
 const App = props => {
   return <Header title="React Title"/>
@@ -15,7 +15,7 @@ const Title = props => {
   return (<h1>{props.title}</h1>)
 }
 
-# with Context - way 1
+// # with Context - way 1
 import {React} from 'react'
 const MyContext = React.createContext()
 
@@ -39,7 +39,7 @@ const Title = props => {
   )
 }
 
-# with Context - way 2
+// # with Context - way 2
 import {React} from 'react'
 const MyContext = React.createContext('Hello React')
 
@@ -56,5 +56,5 @@ const title = React.useContext(MyContext)
   return (<h1>{title}</h1>)
 }
 
-# description
-- we <Context> to pass and get the data from anywhere...that mean the passed data can skip the component level
+// # description
+// - we <Context> to pass and get the data from anywhere...that mean the passed data can skip the component level
