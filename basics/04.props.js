@@ -1,4 +1,4 @@
-# we can pass data by using <html attribute> and to accept the data we have to use <this.props>
+// we can pass data by using <html attribute> and to accept the data we have to use <this.props>
 
 import React from "react";
 
