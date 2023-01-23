@@ -5,8 +5,12 @@ const UseStateHook = () => {
   return (
     <div>
       <h4>{count}</h4>
-      <button onClick={() => setCount(count + 1)}>+</button>
-      <button onClick={() => setCount(count - 1)}>-</button>
+      // don't
+      // <button onClick={() => setCount(count + 1)}>+</button>
+      // <button onClick={() => setCount(count - 1)}>-</button>
+      // do
+      <button onClick={() => setCount( prev => prev + 1 )}>+</button>
+      <button onClick={() => setCount( prev => prev - 1 )}>-</button>
     </div>
   )
 }
