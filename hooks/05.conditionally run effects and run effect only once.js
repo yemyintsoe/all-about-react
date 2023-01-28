@@ -20,9 +20,19 @@ const UseEffect = () => {
 export default UseEffect
 
 // the second parameter for conditionally run the effects
+// # Conditionally Run the useEffect
 useEffect(() => {
     document.title = `component updated ${count} times`
     console.log('updating...')
 }, [count]) 
 
 // this mean that useEffect will be run when the count value is changed 
+
+
+// # Run the useEffect Once
+useEffect(() => {
+    document.title = `component updated ${count} times`
+    console.log('updating...')
+}, []) 
+
+// this mean that useEffect will be run only once
