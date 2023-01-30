@@ -35,4 +35,4 @@ useEffect(() => {
     console.log('updating...')
 }, []) 
 
-// this mean that useEffect will be run only once
+// this mean that useEffect will be run only once (or) just run once when the component did mount
