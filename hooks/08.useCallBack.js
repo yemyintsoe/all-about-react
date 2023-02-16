@@ -10,7 +10,7 @@ const App = () => {
   const increment = useCallback(() => {
     setCount(count + 1)
   }, [count])
-  
+  // the 2nd argument means that this function will be mounted when count is changed by the function of this 1st arguement
   return ( <Child /> )
 
 }
