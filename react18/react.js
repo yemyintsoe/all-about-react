@@ -62,5 +62,6 @@ props vs state
 - state is managed with the component
 - variables declared in the function body
 - state can be modified
-- useState Hook*/
+- useState Hook
+*/
 
