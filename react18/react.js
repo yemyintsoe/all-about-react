@@ -1,10 +1,10 @@
-// 01.INSTALLATION
+/* 01.INSTALLATION */
 > npm install -g npx
 > npx create-react-app react-demo
 or
 > npm create vite@latest
 
-//02. FUNCTIONAL COMPONENT WITH PROPS
+/* 02.FUNCTIONAL COMPONENT WITH PROPS */
 // components/Greet.js
 export const Greet = (props) => {
     return(
@@ -30,4 +30,7 @@ function App() {
   );
 }
 
-// props cannot be modified
+/*
+Notes: 
+- props are immutable that means they cannot be modified
+*/
