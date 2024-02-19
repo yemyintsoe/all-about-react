@@ -65,3 +65,15 @@ props vs state
 - useState Hook
 */
 
+/* ===== 04. EVENT ===== */
+export const EventHandler = () => {
+    const myfun = (event, para1 = 'default value') => {
+        console.log('it works', event, para1)
+    }
+    return (<div>
+        <button onClick={myfun}>Click Me</button>
+        {/* event with arguments  */}
+        <button onClick={(event) => myfun(event, 'para 1')}>Click Me</button>
+    </div>)
+}
+
