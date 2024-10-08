@@ -30,3 +30,17 @@ function Pizza(props) {
     </div>
   );
 }
+
+// Destructuring Props
+function Pizza({ pizza }) {
+  return (
+    <div className="pizza">
+      <img src={pizza.photoName} />
+      <div>
+        <h3>{pizza.name}</h3>
+        <p>{pizza.ingredients}</p>
+        <span>{pizza.price}</span>
+      </div>
+    </div>
+  );
+}
