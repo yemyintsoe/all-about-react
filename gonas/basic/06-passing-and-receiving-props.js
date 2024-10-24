@@ -44,3 +44,22 @@ function Pizza({ pizza }) {
     </div>
   );
 }
+
+
+/* 
+# Children prop
+
+- How we declear
+*/
+const Button = ({children}) => {
+  return <button>{children}</button>
+}
+
+/*
+- How we can use
+<Button>Login</Button>
+<Button>Register</Button>
+
+
+Sidenote: the prop name must be "children"
+*/
