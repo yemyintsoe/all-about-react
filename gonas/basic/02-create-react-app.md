@@ -6,7 +6,7 @@ React App can be created or installed using ```create-react-app```
 $ npx create-react-app simple-app
 ```
 
-If ```create-react-app`` does not work, just create "npm" folder in this folder
+If ```create-react-app``` does not work, just create ```npm``` folder in this folder
 
 ```
 C:\Users\AsRock\AppData\Roaming\
