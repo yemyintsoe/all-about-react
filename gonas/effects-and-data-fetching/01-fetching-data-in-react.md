@@ -10,6 +10,8 @@ const App = () => {
 
 If we fetch data directly inside the component, there will be infinite request in the network tab.
 
+<br/>
+
 # How to fetch data in React
 
 ```js
