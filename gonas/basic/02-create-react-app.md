@@ -1,16 +1,19 @@
-/* React App can be created or installed using "create-react-app" */
+React App can be created or installed using ```create-react-app```
 
-/*
+
 # INSTALLATION
+```
 $ npx create-react-app simple-app
+```
 
-If "create-react-app)" does not work, just create "npm" folder in this folder
+If ```create-react-app`` does not work, just create "npm" folder in this folder
+
+```
 C:\Users\AsRock\AppData\Roaming\
-*/
+```
 
-/*
 # FIRST index.js in React App 18
-*/
+```js
 // index.js
 import React from "react";
 import ReactDOM from "react-dom/client";
@@ -25,3 +28,4 @@ root.render(
     <App />
   </React.StrictMode>
 );
+```
