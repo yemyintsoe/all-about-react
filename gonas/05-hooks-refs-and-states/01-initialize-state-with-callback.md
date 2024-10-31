@@ -7,3 +7,7 @@ const [items, setItems] = useState(JSON.parse(localStorage.getItem("items")))
 ```js
 const [items, setItems] = useState(() => JSON.parse(localStorage.getItem("items")))
 ```
+
+Sidenote -
+
+Call back function must be pure and accept "no argument". It will be called only on initial rendar.
