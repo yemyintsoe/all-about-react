@@ -24,7 +24,7 @@ const SearchForm = () => {
   const inputEl = useRef(null)
 
   useEffect(() => {
-    inputEl.focus()
+    inputEl.current.focus()
   }, [query])
 
   return (
