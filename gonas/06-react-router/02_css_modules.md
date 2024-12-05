@@ -1,9 +1,11 @@
 # CSS Modules
-```html
+```css
 // components/Navbar.module.css
 .nav { ... }
 .nav ul { ... }
+```
 
+```html
 // pages/Navbar.jsx
 import styles from './components/Navbar.module.css'
 
