@@ -4,6 +4,10 @@
 .nav { ... }
 .nav ul { ... }
 ```
+This are for local use. For global use just use css file just we did early. or we can do like the following
+```css
+:global(.nav) { ... }
+```
 
 ```html
 // pages/Navbar.jsx
