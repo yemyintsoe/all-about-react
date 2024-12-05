@@ -1,5 +1,5 @@
 # CSS Modules
-```
+```html
 // components/Navbar.module.css
 .nav { ... }
 .nav ul { ... }
