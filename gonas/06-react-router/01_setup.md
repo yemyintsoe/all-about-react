@@ -4,6 +4,7 @@ npm install react-router
 ```
 
 # Setup basic route
+~~~ App.jsx ~~~ 
 ```js
 import { BrowserRouter, Routes, Route, NavLink } from "react-router";
 import { Home } from "./pages/Home";
@@ -50,8 +51,7 @@ export default App;
 <BrowserRouter>
   ....
   <Routes>
-    <Route path="/" element={<Home />} />
-    <Route path="about" element={<About />} />
+    ...
     <Route path="contact" element={<Contact />} />
     <Route path="course" element={<Course />}>
       <Route index element={<Description />} />
