@@ -42,4 +42,5 @@ export default App;
 ```
 
 ## Sidenote
-<Link>, <NavLink> will not work outside of the <BrowserRouter>, so that it's required to be wrapped by BrowserRouter
+- Link, NavLink will not work outside of the BrowserRouter, so that it's required to be wrapped by BrowserRouter
+- Use NavLink instead of Link if you want automatic 'active' class at the link when ii's visited
