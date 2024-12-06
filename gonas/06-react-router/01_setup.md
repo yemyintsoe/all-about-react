@@ -4,7 +4,7 @@ npm install react-router
 ```
 
 # Setup basic route
-** App.jsx **
+**App.jsx**
 ```js
 import { BrowserRouter, Routes, Route, NavLink } from "react-router";
 import { Home } from "./pages/Home";
@@ -47,7 +47,7 @@ export default App;
 - Use NavLink instead of Link if you want automatic 'active' class at the link when it's visited
 
 # Nested Route
-** App.jsx **
+**App.jsx**
 ```js
 <BrowserRouter>
   ....
@@ -63,7 +63,7 @@ export default App;
 </BrowserRouter>
 ```
 
-** Course.jsx **
+**Course.jsx**
 ```jsx
 import React from "react";
 import { Outlet } from "react-router";
