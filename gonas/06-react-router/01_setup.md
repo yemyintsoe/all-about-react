@@ -4,7 +4,7 @@ npm install react-router
 ```
 
 # Setup basic route
-~~~ App.jsx ~~~ 
+** App.jsx **
 ```js
 import { BrowserRouter, Routes, Route, NavLink } from "react-router";
 import { Home } from "./pages/Home";
@@ -47,6 +47,7 @@ export default App;
 - Use NavLink instead of Link if you want automatic 'active' class at the link when it's visited
 
 # Nested Route
+** App.jsx **
 ```js
 <BrowserRouter>
   ....
@@ -61,3 +62,21 @@ export default App;
   </Routes>
 </BrowserRouter>
 ```
+
+** Course.jsx **
+```jsx
+import React from "react";
+import { Outlet } from "react-router";
+
+export const Course = () => {
+  return (
+    <div className="container mx-auto px-12">
+      ...
+      <Outlet />
+    </div>
+  );
+};
+```
+
+## Sidenote
+Outlet works for nested routes components (Just like vue.js slot)
