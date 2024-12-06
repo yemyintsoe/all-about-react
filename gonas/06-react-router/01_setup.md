@@ -44,3 +44,20 @@ export default App;
 ## Sidenote
 - Link, NavLink will not work outside of the BrowserRouter, so that it's required to be wrapped by BrowserRouter
 - Use NavLink instead of Link if you want automatic 'active' class at the link when it's visited
+
+# Nested Route
+```js
+<BrowserRouter>
+  ....
+  <Routes>
+    <Route path="/" element={<Home />} />
+    <Route path="about" element={<About />} />
+    <Route path="contact" element={<Contact />} />
+    <Route path="course" element={<Course />}>
+      <Route index element={<Description />} />
+      <Route path="content" element={<Content />} />
+      <Route path="review" element={<Review />} />
+    </Route>
+  </Routes>
+</BrowserRouter>
+```
