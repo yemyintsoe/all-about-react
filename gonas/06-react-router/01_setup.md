@@ -40,3 +40,6 @@ function App() {
 
 export default App;
 ```
+
+## Sidenote
+<Link>, <NavLink> will not work outside of the <BrowserRouter>, so that it's required to be wrapped by BrowserRouter
