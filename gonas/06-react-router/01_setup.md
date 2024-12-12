@@ -126,6 +126,6 @@ const Course = () => {
 
 ## Update the Query String
 ```jsx
-<button onClick={() => {setSearchParams({comments_count: 100, reviews_count: 50})}}>Change Comment & Review Count </button>
+<button onClick={() => {setSearchParams({comments_count: 100, reviews_count: 50})}}>Change Count </button>
 ```
 
