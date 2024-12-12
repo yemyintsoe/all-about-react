@@ -80,3 +80,16 @@ export const Course = () => {
 
 ## Sidenote
 Outlet works for nested routes components (Just like vue.js slot)
+
+
+# Dynamic Route with URL Parameters
+**Route**
+```js
+<Route path="courses" element={<Courses />} />
+<Route path="courses/:id" element={<Course />} />
+```
+
+**Link**
+```html
+<Link to={`/courses/${id}`}>Go to course</Link>
+```
