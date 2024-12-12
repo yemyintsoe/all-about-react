@@ -83,13 +83,21 @@ Outlet works for nested routes components (Just like vue.js slot)
 
 
 # Dynamic Route with URL Parameters
-**Route**
+## Route
 ```js
 <Route path="courses" element={<Courses />} />
 <Route path="courses/:id" element={<Course />} />
 ```
 
-**Link**
+## Link
 ```html
 <Link to={`/courses/${id}`}>Go to course</Link>
+```
+
+## In the Component
+```jsx
+import {useParams} from "react-router-dom"
+const Course = () => {
+  const params = useParams()
+}
 ```
