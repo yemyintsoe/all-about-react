@@ -103,5 +103,5 @@ const Course = () => {
 }
 ```
 ## Sidenote
-- if :id, must be ```const {id} = useParams()```
-- if :course, must be ```const {course} = useParams()```
+- if ```:id```, must be ```const {id} = useParams()```
+- if ```:course```, must be ```const {course} = useParams()```
