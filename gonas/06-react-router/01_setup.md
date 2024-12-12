@@ -4,8 +4,8 @@ npm install react-router
 ```
 
 # Setup basic route
-**App.jsx**
-```js
+## App.jsx
+```jsx
 import { BrowserRouter, Routes, Route, NavLink } from "react-router";
 import { Home } from "./pages/Home";
 import { About } from "./pages/About";
