@@ -97,6 +97,7 @@ Outlet works for nested routes components (Just like vue.js slot)
 ## In the Component
 ```jsx
 import {useParams} from "react-router-dom"
+
 const Course = () => {
   const params = useParams()
 }
