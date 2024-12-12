@@ -105,3 +105,22 @@ const Course = () => {
 ## Sidenote
 - if ```:id```, must be ```const {id} = useParams()```
 - if ```:course```, must be ```const {course} = useParams()```
+
+# Setting and Reading Query String
+## Link
+```jsx
+<Link to={`/courses/${id}?comments_count=${comment}&reviews_count={review}`}>Go to course</Link>
+```
+
+## In the Component
+```jsx
+import {useSearchParams} from "react-router-dom"
+
+const Course = () => {
+  ...
+  const [searchParams, setSearchParams] = useSearchParams();
+  const commentsCount = searchParams.get('comments_count')
+  const reviewsCount = searchParams.get('reviews_count')
+}
+```
+
