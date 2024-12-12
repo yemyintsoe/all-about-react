@@ -47,7 +47,7 @@ export default App;
 - Use NavLink instead of Link if you want automatic 'active' class at the link when it's visited
 
 # Nested Route
-**App.jsx**
+## App.jsx
 ```js
 <BrowserRouter>
   ....
@@ -63,7 +63,7 @@ export default App;
 </BrowserRouter>
 ```
 
-**Course.jsx**
+## Course.jsx
 ```jsx
 import React from "react";
 import { Outlet } from "react-router";
