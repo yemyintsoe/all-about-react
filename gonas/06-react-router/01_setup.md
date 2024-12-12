@@ -99,6 +99,9 @@ Outlet works for nested routes components (Just like vue.js slot)
 import {useParams} from "react-router-dom"
 
 const Course = () => {
-  const params = useParams()
+  const {id} = useParams()
 }
 ```
+## Sidenote
+- if :id, must be ```const {id} = useParams()```
+- if :course, must be ```const {course} = useParams()```
