@@ -94,7 +94,7 @@ Outlet works for nested routes components (Just like vue.js slot)
 <Link to={`/courses/${id}`}>Go to course</Link>
 ```
 
-## In the Component
+## In the Component (Retrieve)
 ```jsx
 import {useParams} from "react-router-dom"
 
@@ -112,7 +112,7 @@ const Course = () => {
 <Link to={`/courses/${id}?comments_count=${comment}&reviews_count={review}`}>Go to course</Link>
 ```
 
-## In the Component
+## In the Component (Retrieve)
 ```jsx
 import {useSearchParams} from "react-router-dom"
 
