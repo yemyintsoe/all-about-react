@@ -129,3 +129,26 @@ const Course = () => {
 <button onClick={() => {setSearchParams({comments_count: 100, reviews_count: 50})}}>Change Count </button>
 ```
 
+
+# Navigating
+## useNavigate
+```jsx
+import { useNavigate } from "react-router";
+
+export function LoginPage() {
+  let navigate = useNavigate();
+
+  return (
+    <>
+      ...
+      <MyLoginForm
+        onSuccess={() => {
+          navigate("/dashboard");
+        }}
+      />
+      ...
+    </>
+  );
+}
+```
+
