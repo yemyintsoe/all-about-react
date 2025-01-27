@@ -1,7 +1,15 @@
 # After Context API
 After Context API, we do not need to pass props step by step from parents to childs. We can directly pass or declear props globally and recive directly from the childs. 
 
-**1. App.jsx**
+**1. ModalContext.js **
+```js
+import { createContext } from "react";
+
+export const ModalContext = createContext();
+```
+
+
+**2. App.jsx**
 ```jsx
 import { useState } from "react";
 import { Modal } from "./components/Modal";
@@ -23,7 +31,8 @@ function App() {
 export default App;
 ```
 
-**2. Modal.jsx**
+
+**3. Modal.jsx**
 ```jsx
 import { useState } from "react";
 import { Modal } from "./components/Modal";
@@ -45,7 +54,8 @@ function App() {
 export default App;
 ```
 
-**3. ModalCloseBtn**
+
+**4. ModalCloseBtn**
 ```jsx
 import { useState } from "react";
 import { Modal } from "./components/Modal";
