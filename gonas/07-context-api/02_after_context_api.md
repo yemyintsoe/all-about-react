@@ -1,7 +1,7 @@
 # After Context API
 After Context API, we do not need to pass props step by step from parents to childs. We can directly pass or declear props globally and recive directly from the childs. 
 
-**1. ModalContext.js **
+**1. ModalContext.js**
 ```js
 import { createContext } from "react";
 
