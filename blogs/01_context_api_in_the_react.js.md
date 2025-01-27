@@ -78,7 +78,7 @@ export const ModalCloseBtn = ({ closeModal }) => {
 ```
 - closeModal function (State) ကို လက်ခံတယ်၊ ပြီးရင် သုံးလိုက်တယ်။
 
-ဒါကတော့ Passing Prop ကိုသုံးပြီး State တစ်ခုကို Step by step pass လုပ်လိုက်တာပါ။ App.jsx->Modal.jsx->ModalCloseBtn.jsx ဒီလိုမျိုး Step ၃ခုလောက်မလို့သာ သိပ်မသိသာတာ။ သုံမယ့် နေရာအရမ်းများရင် မကောင်းတော့ပါဘူး။ 
+ဒါကတော့ Passing Prop ကိုသုံးပြီး State တစ်ခုကို Step by step pass လုပ်လိုက်တာပါ။ App.jsx->Modal.jsx->ModalCloseBtn.jsx ဒီလိုမျိုး Step ၃ခုလောက်မလို့သာ သိပ်မသိသာတာ။ သုံးမယ့် နေရာအရမ်းများရင် မကောင်းတော့ပါဘူး။ 
 
 
 ## Using Context API (After Context API)
@@ -120,7 +120,7 @@ export default App;
 - Code တွေအကုန်လုံးလိုလိုက Passing Prop တုန်းက ဖော်ပြခဲ့တာ Code တွေနဲ့ အတူတူပါပဲ။ 
 - မတူတော့တာကတော့  <ModalContext.Provider value={{ closeModal }}></ModalContext.Provider>
 - Component ကနေ တိုက်ရိုက် pass မလုပ်တော့ဘဲ ModalContext ကို import လုပ်ပြီး ModalContext.Provider နဲ့ closeModal function (State) ကို Pass ထားလိုက်ပါတယ်။
-- ModalContext.Provider ကနေ Provide လိုက်တဲ့ State ကို သူံရဲ့ အောက်မှာ ရောက်နေတဲ့ (သို့) ရှိနေတဲ့ ဘယ် Component (Modal.jsx၊ ModalCloseBtn.jsx) မှာမဆို ယူသုံးလို့ရပါမယ်။
+- ModalContext.Provider ကနေ Provide လိုက်တဲ့ State ကို သူ့ရဲ့ အောက်မှာ ရောက်နေတဲ့ (သို့) ရှိနေတဲ့ ဘယ် Component (Modal.jsx၊ ModalCloseBtn.jsx) မှာမဆို ယူသုံးလို့ရပါမယ်။
 
 **3. Modal.jsx**
 ```jsx
