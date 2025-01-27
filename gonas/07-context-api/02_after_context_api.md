@@ -34,45 +34,29 @@ export default App;
 
 **3. Modal.jsx**
 ```jsx
-import { useState } from "react";
-import { Modal } from "./components/Modal";
-import { ModalContext } from "./contexts/ModalContext";
+import { ModalCloseBtn } from "./ModalCloseBtn";
 
-function App() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const openModal = () => setIsModalOpen(true);
-  const closeModal = () => setIsModalOpen(false);
-
+export const Modal = () => {
   return (
-    <ModalContext.Provider value={{ closeModal }}>
-      <button onClick={openModal}>Open Modal</button>
-      {isModalOpen && <Modal />}
-    </ModalContext.Provider>
+    <div style={{ border: "1px solid gray", padding: "1rem" }}>
+      <div>
+        <h1>Modal title</h1>
+        <p>This is a modal content</p>
+      </div>
+      <ModalCloseBtn />
+    </div>
   );
-}
-
-export default App;
+};
 ```
 
 
 **4. ModalCloseBtn**
 ```jsx
-import { useState } from "react";
-import { Modal } from "./components/Modal";
-import { ModalContext } from "./contexts/ModalContext";
+import { useContext } from "react";
+import { ModalContext } from "../contexts/ModalContext";
 
-function App() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const openModal = () => setIsModalOpen(true);
-  const closeModal = () => setIsModalOpen(false);
-
-  return (
-    <ModalContext.Provider value={{ closeModal }}>
-      <button onClick={openModal}>Open Modal</button>
-      {isModalOpen && <Modal />}
-    </ModalContext.Provider>
-  );
-}
-
-export default App;
+export const ModalCloseBtn = () => {
+  const { closeModal } = useContext(ModalContext);
+  return <button onClick={closeModal}>Close</button>;
+};
 ```
