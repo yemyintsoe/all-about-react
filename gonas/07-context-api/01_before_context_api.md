@@ -1,7 +1,8 @@
 # Before Context API
 Before Context API, we need to pass prop from parents to child, step by step.
 In this example, ```setIsModalOpen``` prop has to be passed from App.jsx->Modal.jsx->ModalCloseBtn.jsx
-**App.jsx**
+
+**1. App.jsx**
 ```jsx
 import { useState } from "react";
 import { Modal } from "./components/Modal";
@@ -29,7 +30,7 @@ function App() {
 export default App;
 ```
 
-**Modal.jsx**
+**2. Modal.jsx**
 ```jsx
 import { ModalCloseBtn } from "./ModalCloseBtn";
 
@@ -55,7 +56,7 @@ export const Modal = ({ setIsModalOpen }) => {
 };
 ```
 
-**ModalCloseBtn.jsx**
+**3. ModalCloseBtn.jsx**
 ```jsx
 export const ModalCloseBtn = ({ setIsModalOpen }) => {
   return (
